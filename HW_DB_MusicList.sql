@@ -44,3 +44,5 @@ create table if not exists Track_Collection (
     track_id integer not null references Track(id),
     collection_id integer not null references Collection(id)
 );
+
+ALTER TABLE collection RENAME COLUMN name_album TO name_collection;
